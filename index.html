@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="section py-5 show" id="home">
+      <div class="container">
+        <div class="row border-sm shadow py-3">
+          <div class="col-md-6 m-auto text-center">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              eos illum, necessitatibus tempore id porro similique deleniti
+              inventore nesciunt ipsum sit dolorem, obcaecati veniam sed
+              perspiciatis voluptate minima, eaque saepe!
+            </p>
+            <button class="btn btn-primary" id="clickAbout">About Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section py-5 hide" id="about">
+      <div class="container">
+        <div class="row border-sm shadow py-3">
+          <div class="col-md-6 text-center m-auto">
+            <button class="btn btn-primary mb-3" id="clickBack">Back</button>
+            <h3>About Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              eos illum, necessitatibus tempore id porro similique deleniti
+              inventore nesciunt ipsum sit dolorem, obcaecati veniam sed
+              perspiciatis voluptate minima, eaque saepe!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-5 bg-warning">
+            <h3>Add Info</h3>
+            <div id="alerts"></div>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary my-3"
+                id="submit-data"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-hover text-center">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
